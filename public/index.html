@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        background-color: rgba(6, 27, 45, 0.9);
+        color: /*rgba(1, 1, 1, 1); */ white;
+        scroll-behavior: smooth;
+        transition: 1s;
+      }
+    </style>
   </head>
   <body>
     <noscript>

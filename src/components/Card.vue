@@ -1,39 +1,28 @@
 <template>
 	<div class="container" id="projects">
+
+
 		<div class="card">
-			<slot></slot>
+			<a class="" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
+				<h3>A social platform built with PHP/Laravel and Javascript/Vuejs</h3>
+			</a>
 		</div>
 
 		<div class="card">
-			<slot></slot>
+			<a class="" href="#" title="click link to go to project page">
+				<h3>A single page application built with PHP/Laravel and Javascript/Vuejs</h3>
+			</a>
 		</div>
 
-		<div class="card">
-			<slot></slot>
-		</div>
-
-		<div class="card">
-			<slot></slot>
-		</div>
-
-		<div class="card">
-			<slot></slot>
-		</div>
 		
-		<div class="card">
-			<slot></slot>
-		</div>
-		
-		<div class="card">
-			<slot></slot>
-		</div>
-		
+
 	</div>
 </template>
 
-<style>
+<style scoped>
 	.container {
 		display: flex;
+		/*flex-direction: row;*/
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
@@ -54,6 +43,12 @@
 	.card:hover {
 		transform: scale(1.1);
 		background-color: rgba(29, 139, 82, 1);
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		font-style: italic; 
 	}
 </style>
 

@@ -12,26 +12,18 @@
 
 <style scoped>
 footer {
+	display: flex;
 	text-align: left;
-	background: rgba(29, 139, 82, 1);
-	padding: 2rem 0 5rem 0;
+	background: rgba(29, 139, 82, .7);
+	padding: 2rem 5rem 5rem;
 }
 
-div {
-	margin-left: 6.25rem;
-}
-
-h1, p {
-	margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 700px) {
 	div {
-		margin-left: 29rem;
+		margin: 0 30%;
 	}
 	
-	div p {
-		text-align: justify;
-	}
 }
+
+
 </style>

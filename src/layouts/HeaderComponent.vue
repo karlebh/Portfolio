@@ -1,23 +1,25 @@
 <template>
 	<header>
+
+
 		<div class="head">
 			<h2>Caleb</h2>
 			
 			<Hambuger @click="toggleMobile" class="hambuger"></Hambuger>
 
 			<div class="desktop">
-				<a href="#about">About</a>
-				<a href="#cv">CV</a>
-				<a href="#contact">Contact</a>
-				<a href="#projects">Projects</a>
+				<a href="#about" title="about link">About</a>
+				<a href="#cv" title="cv link">CV</a>
+				<a href="#contact" title="contact link">Contact</a>
+				<a href="#projects" title="projects link">Projects</a>
 			</div>
 		</div>
 
 		<div v-if="isOpen" class="mobile">
-			<a href="#about">About</a>
-			<a href="#cv">CV</a>
-			<a href="#contact">Contact</a>
-			<a href="#projects">Projects</a>
+			<a href="#about" title="about link">About</a>
+			<a href="#cv" title="cv link">CV</a>
+			<a href="#contact" title="contact link">Contact</a>
+			<a href="#projects" title="projects link">Projects</a>
 		</div>
 
 	</header>
@@ -63,13 +65,13 @@
 
 		components: 
 		{
-			Hambuger
+			Hambuger,
 		}
 	}
 </script>
 
 <style scoped>
-	
+
 	a {
 		text-decoration: none;
 	}
@@ -85,6 +87,35 @@
 
 	@keyframes h {
 		from {
+			left: -500px;
+		}
+
+		to {
+			left: 0;
+		}
+	}
+
+	@-webkit-keyframes h {
+			from {
+			left: -500px;
+		}
+
+		to {
+			left: 0;
+		}
+	}
+	@-o-keyframes h {
+			from {
+			left: -500px;
+		}
+
+		to {
+			left: 0;
+		}
+
+	}
+	@-moz-keyframes h {
+			from {
 			left: -500px;
 		}
 
@@ -134,6 +165,34 @@
 		}
 
 		@keyframes desktop {
+			from {
+				right: -500px;
+			}
+
+			to {
+				right: 0;
+			}
+		}
+
+		@-webkit-keyframes desktop {
+			from {
+				right: -500px;
+			}
+
+			to {
+				right: 0;
+			}
+		}
+		@-o-keyframes desktop {
+			from {
+				right: -500px;
+			}
+
+			to {
+				right: 0;
+			}
+		}
+		@-moz-keyframes desktop {
 			from {
 				right: -500px;
 			}
@@ -208,7 +267,7 @@
 			justify-content: space-between;
 			width: 100%;
 			flex-direction: column;
-			transition: 1.5s;
+			transition: 10s;
 			position: relative;
 			animation: animateTop .5s;
 		}
@@ -221,10 +280,39 @@
 			to {
 				top: 0;
 				opacity: 1;
-
 			}
 		}
-		
+
+		@-webkit-keyframes animateTop {
+				from {
+				top: 100px;
+				opacity: 0;
+			}
+			to {
+				top: 0;
+				opacity: 1;
+			}
+		}
+		@-o-keyframes animateTop {
+					from {
+				top: 100px;
+				opacity: 0;
+			}
+			to {
+				top: 0;
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes animateTop {
+					from {
+				top: 100px;
+				opacity: 0;
+			}
+			to {
+				top: 0;
+				opacity: 1;
+			}
+		}
 
 		.mobile a {
 			padding: 0.3rem 1rem;
@@ -263,10 +351,46 @@
 		@keyframes link {
 			from {
 				left: 1500px;
+				transition: 4s;
 			}
 
 			to {
 				left: 0;
+				transition: 4s;
+			}
+		}
+
+		@-webkit-keyframes link {
+			from {
+				left: 1500px;
+				transition: 4s;
+			}
+
+			to {
+				left: 0;
+				transition: 4s;
+			}
+		}
+		@-o-keyframes link {
+			from {
+				left: 1500px;
+				transition: 4s;
+			}
+
+			to {
+				left: 0;
+				transition: 4s;
+			}
+		}
+		@-moz-keyframes link {
+			from {
+				left: 1500px;
+				transition: 4s;
+			}
+
+			to {
+				left: 0;
+				transition: 4s;
 			}
 		}
 

@@ -1,3 +1,7 @@
 [build]
 command = "npm run build && npm run export"
+<<<<<<< HEAD
 publish = "out"
+=======
+publish = "out"
+>>>>>>> 7ea14eef3cb9afb530d7253f85a52bf5037839d0

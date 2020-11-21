@@ -1,12 +1,16 @@
 <template>
 	<div class="parent">
 		<div>
-			<h2>
-			Hi! <br>
-			I am Caleb Akeju
-			</h2>
+			<div class="heroText">
+				<h2>
+				Hi! <br>
+				I am Caleb Akeju
+				</h2>
 
-			<h1>A fullstack web developer.</h1>
+				<br>
+
+				<h1>A fullstack web developer.</h1>
+			</div>
 
 			<div id="util">
 				<button>
@@ -190,6 +194,10 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+		}
+
+		.heroText {
+			margin-left: 3rem;
 		}
 
 		.links {

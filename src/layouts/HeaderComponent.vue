@@ -161,7 +161,7 @@
 			color: #000;
 			position: relative;
 			overflow: hidden;
-			animation: desktop 2s;
+			animation: desktop 1.1s;
 		}
 
 		@keyframes desktop {
@@ -267,7 +267,7 @@
 			justify-content: space-between;
 			width: 100%;
 			flex-direction: column;
-			transition: 10s;
+			transition: 1s;
 			position: relative;
 			animation: animateTop .5s;
 		}
@@ -318,7 +318,7 @@
 			padding: 0.3rem 1rem;
 			color: rgba(29, 139, 82, 1);
 			position: relative;
-			animation: link 1.5s;
+			animation: link .5s;
 			font-weight: bold;
 			width: 100%;
 		}
@@ -334,29 +334,29 @@
 		}
 
 		.mobile a:nth-child(2) {
-			animation: link .7s;
+			animation: link .5s;
 		}
 		
 		.mobile a:nth-child(3) {
 			padding-left: 1rem;
-			animation: link 1.3s;
+			animation: link .6s;
 		}
 
 		.mobile a:nth-child(4) {
 			padding-left: 1rem;
 			padding-bottom: 0.7rem;
-			animation: link 1.7s;
+			animation: link .7s;
 		}
 
 		@keyframes link {
 			from {
 				left: 1500px;
-				transition: 4s;
+				transition: 1s;
 			}
 
 			to {
 				left: 0;
-				transition: 4s;
+				transition: 1.1s;
 			}
 		}
 

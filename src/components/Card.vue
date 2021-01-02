@@ -2,17 +2,17 @@
 	<div class="container" id="projects">
 
 
-		<div class="card">
-			<a class="" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
+		<a class="" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
+			<button class="card">
 				<h3>A social platform built with PHP/Laravel and Javascript/Vuejs</h3>
-			</a>
-		</div>
+			</button>
+		</a>
 
-		<div class="card">
-			<a class="" href="#" title="click link to go to project page">
+		<a class="" href="#" title="click link to go to project page">
+			<button class="card">
 				<h3>A single page application built with PHP/Laravel and Javascript/Vuejs</h3>
-			</a>
-		</div>
+			</button>
+		</a>
 
 		
 
@@ -49,6 +49,12 @@
 		text-decoration: none;
 		color: white;
 		font-style: italic; 
+	}
+
+	button, button:hover, button:active {
+		cursor: pointer;
+		outline: none;
+		border: 1px;
 	}
 </style>
 

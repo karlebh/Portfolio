@@ -13,11 +13,11 @@
 			</div>
 
 			<div id="util">
-				<button>
-					<a href="#contact">
-					CONTACT
-					</a>
-				</button>
+				<a href="#contact">
+					<button>
+						CONTACT
+					</button>
+				</a>
 
 				<div class="links">
 					<twitterSVG />
@@ -42,8 +42,8 @@
 	import twitterSVG from './twitterSVG'
 	import linkedInSVG from './linkedInSVG'
 	
-	export default 
-	{
+	export default {
+		
 		components: {
 			facebookSVG,
 			githubSVG,
@@ -70,12 +70,6 @@
 		overflow: hidden;
 	}
 	
-	.socialLinks {
-		display: grid;
-		grid-template-columns: auto auto auto auto;
-		grid-row-gap: 100rem;
-	}
-
 	button {
 		padding: 1rem 2rem;
 		font-weight: bold;
@@ -102,7 +96,7 @@
 		position: relative;
 		font-size: 2rem;
 		color: rgba(29, 139, 82, .7); 
-		animation: second_header 4s;
+		animation: second_header 1.5s;
 	}
 	
 	@keyframes second_header {
@@ -125,7 +119,7 @@
 
 	h2 {
 		position: relative;
-		animation: first_header 7s;
+		animation: first_header 2s;
 	}
 
 	@keyframes first_header {
@@ -185,6 +179,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		cursor: pointer;
 
 	}
 	

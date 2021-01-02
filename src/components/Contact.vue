@@ -13,7 +13,7 @@
 			
 			<div>
 				<label for="content">Content</label>
-				<textarea name="" id="" placeholder="What do you have in mind?"></textarea>
+				<textarea name="" id="" placeholder="What do you have in mind?" required></textarea>
 			</div>
 
 			<button type="submit">

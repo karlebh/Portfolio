@@ -3,15 +3,15 @@
 		<div>
 			<h1>Caleb</h1>
 
-			<p>&copy; <span>2020</span> copyright all rights reserved<span ></span></p>
-<!-- 
-			<div class="links">
+			<p>&copy; <span id="date"></span> copyright all rights reserved<span ></span></p>
+
+			<!-- <div class="links">
 				<twitterSVG />
 				<githubSVG />
 				<facebookSVG />
 				<linkedInSVG />
-			</div>
- -->		</div>
+			</div> -->
+		</div>
 	</footer>
 </template>
 
@@ -28,6 +28,12 @@
 			// githubSVG,
 			// facebookSVG,
 			// linkedInSVG,
+		}, 
+
+		mounted()
+		{
+			let date = new Date()
+			document.querySelector('#date').innerHTML = date.getFullYear()
 		}
 	}
 </script>
@@ -40,6 +46,11 @@ footer {
 	padding: 2rem 5rem 5rem;
 }
 
+p {
+	margin-top: 1rem;
+}
+
+
 @media screen and (min-width: 700px) {
 	div {
 		margin: 0 30%;
@@ -48,11 +59,11 @@ footer {
 }
 
 /* mobile */
-@media screen and (max-width: 960px) {
+/*@media screen and (max-width: 960px) {
 	.links {
 		margin-bottom: 4rem;
 	}
-}
+}*/
 
 
 </style>

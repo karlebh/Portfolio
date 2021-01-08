@@ -1,27 +1,73 @@
 <template>
-	<div class="contact" id="contact">
-		<form action="">
-			<div>
-				<label for="name">Name</label>
-				<input type="text" name="name" placeholder="What is your name?" />
-			</div>
+	<!-- eslint-disable -->
+    <div class="contact">
+        <form @submit.prevent="sendEmail">
+	        <div>
+				<label>Name</label>
+				<input 
+				type="text" 
+				v-model="name"
+				name="name"
+				placeholder="Your Name"
+				>
+	        </div>
 
 			<div>
-				<label for="email">Email</label>
-				<input type="text" name="email" placeholder="Your e-mail?" required />
+				<label>Email</label>
+				<input 
+				type="email" 
+				v-model="email"
+				name="email"
+				placeholder="Your Email"
+				>
 			</div>
-			
 			<div>
-				<label for="content">Content</label>
-				<textarea name="" id="" placeholder="What do you have in mind?" required></textarea>
+				<label>Message</label>
+				<textarea 
+				name="message"
+				v-model="message"
+				cols="30" rows="5"
+				placeholder="Message"
+				>
+				</textarea>
 			</div>
-
-			<button type="submit">
-				Send Email
-			</button>
-		</form>
-	</div>
+          
+          <button type="submit"> Send </button>
+        </form>
+    </div>
 </template>
+
+<script>
+import emailjs from 'emailjs-com';
+export default {
+  name: 'ContactUs',
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID', {
+          name: this.name,
+          email: this.email,
+          message: this.meessage
+        })
+        console.log('it works!!!')
+      } catch (error) {
+          console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
+  }
+}
+</script>
 
 <style scoped>
 	.contact {

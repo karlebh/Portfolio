@@ -54,6 +54,10 @@
 </script>
 
 <style scoped>
+
+	.links a {
+		margin-right: 2rem;
+	}
 	
 	a {
 		text-decoration: none;
@@ -93,6 +97,7 @@
 	}
 
 	h1 {
+		/*font-family: 'Verdana';*/
 		position: relative;
 		font-size: 2rem;
 		color: rgba(29, 139, 82, .7); 
@@ -141,7 +146,7 @@
 	}
 
 	.image {
-		/*position: relative;*/
+		position: relative;
 		background: no-repeat url('~@/assets/karleb.png');
 		width: 25rem;
 		height: 25rem;
@@ -150,6 +155,7 @@
 		border-radius: .5rem 3rem;
 		position: relative;
 		left: 4rem;
+		animation: image 1s;
 	}
 
 	.image:hover {

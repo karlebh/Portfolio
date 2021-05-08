@@ -1,26 +1,20 @@
 <template>
 	<div class="hey" id="about">
-		<h3> I am Caleb Akeju, a fullstack web developer</h3>
-		<br>
-		<br>
-		<p class="about">
-		My stacks include:
-			PHP/Laravel,
-			Javascript/Vue,
-			CSS/Tailwind/Bootstrap,
-			HTML. <br />
-		
-		Other areas of programming I am interested in are Algorithm and Data Structure and System Design. I am also fascinated with wordpress, shopify, python and ruby programming language.
-		</p>
+		<article class="about">
+			I am passionate about developing web solutions. I have years of experience developing with PHP and Javascrit experience.
 
+			I use Laravel framework to develop various website applications. For the front end, I major in VueJs a Javascript framework that allows to write Javascript in a declarative manner
+		</article>	
 	</div>
 </template>
 
 <style scoped>
-	.hey {
-		padding: 0 2rem;
-		margin: 3rem 0;
-		text-align: center;
-	}
+.hey {
+	padding: 0 2rem;
+	margin: 3rem 0;
+	text-align: center;
+	font-size: 1.3rem;
+	text-align: justify;
+}
 
 </style>

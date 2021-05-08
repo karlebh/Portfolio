@@ -5,33 +5,31 @@
 
 			<p>&copy; <span id="date"></span> copyright all rights reserved<span ></span></p>
 
-			<!-- <div class="links">
+			<div class="links">
 				<twitterSVG />
 				<githubSVG />
 				<facebookSVG />
 				<linkedInSVG />
-			</div> -->
+			</div>
 		</div>
 	</footer>
 </template>
 
 <script>
-	// import facebookSVG from '../components/facebookSVG'
-	// import githubSVG from '../components/githubSVG'
-	// import twitterSVG from '../components/twitterSVG'
-	// import linkedInSVG from '../components/linkedInSVG'
+	import facebookSVG from '../components/facebookSVG'
+	import githubSVG from '../components/githubSVG'
+	import twitterSVG from '../components/twitterSVG'
+	import linkedInSVG from '../components/linkedInSVG'
 	
-	export default 
-	{
+	export default {
 		components: {
-			// twitterSVG,
-			// githubSVG,
-			// facebookSVG,
-			// linkedInSVG,
+			twitterSVG,
+			githubSVG,
+			facebookSVG,
+			linkedInSVG,
 		}, 
 
-		mounted()
-		{
+		mounted() {
 			let date = new Date()
 			document.querySelector('#date').innerHTML = date.getFullYear()
 		}
@@ -50,12 +48,16 @@ p {
 	margin-top: 1rem;
 }
 
+.links {
+	display: flex;
+	margin-top: 2rem;
+	color: white;
+}
 
 @media screen and (min-width: 700px) {
 	div {
 		margin: 0 30%;
 	}
-	
 }
 
 /* mobile */

@@ -1,7 +1,5 @@
 <template>
 	<header>
-
-
 		<div class="head">
 			<h2>Caleb</h2>
 			
@@ -15,7 +13,7 @@
 			</div>
 		</div>
 
-		<div v-if="isOpen" class="mobile">
+		<div v-show="isOpen" class="mobile">
 			<a href="#about" title="about link">About</a>
 			<a href="#cv" title="cv link">CV</a>
 			<a href="#contact" title="contact link">Contact</a>
@@ -28,43 +26,19 @@
 <script>
 	import Hambuger from '@/components/Hambuger'
 
-	export default 
-	{
-		data() 
-		{
+	export default {
+		data() {
 			return {
 				isOpen: false,
-				prevScrollPos: window.pageYOffset,
 			}
 		},
-
-		mounted() 
-		{
-		},
-
-		methods: 
-		{
+		methods: {
 			toggleMobile() {
-				this.isOpen = ! this.isOpen
+				this.isOpen = !this.isOpen
 			},
-
-			hideHeaderOnScroll() {
-				let currScrollPos = window.pageYOffset
-
-				if(this.prevScrollPos > currScrollPos) {
-					document.getElementsByClassName('head').style.top = "0"
-				} else {
-					document.getElementsByClassName('head').style.top = "-50px"
-				}
-
-				this.prevScrollPos = currScrollPos
-			}
-
-			
 		},
 
-		components: 
-		{
+		components: {
 			Hambuger,
 		}
 	}
@@ -129,6 +103,7 @@
 		display: -webkit-flex;
 		justify-content: space-between;
 		position: relative;
+		align-items: center;
 	}
 
 
@@ -212,7 +187,7 @@
 
 		.desktop a:hover {
 			color: white;
-			transition: color .3s;
+			transition: color .1s;
 		}
 
 		.desktop a:nth-child(1) {
@@ -221,14 +196,8 @@
 
 		.desktop a:nth-child(2) {
 			margin-top: .7rem;
-			transition: 3s ease-out;
+			transition: .3s ease-out;
 		}
-
-		.desktop a:nth-child(2):hover {
-			transform: translateY(-.7rem);
-			transition: .5s ease-in;
-		}
-
 
 		.desktop a:nth-child(3) {
 			margin-top: 0;
@@ -237,15 +206,8 @@
 
 		.desktop a:nth-child(4) {
 			margin-top: .7rem;
-			transition: 3s ease-out;
+			transition: .3s ease-out;
 		}
-
-
-		.desktop a:nth-child(4):hover {
-			transform: translateY(-.7rem);
-			transition: .5s ease-in;
-		}
-
 
 		.mobile {
 			display: none;
@@ -284,7 +246,7 @@
 		}
 
 		@-webkit-keyframes animateTop {
-				from {
+			from {
 				top: 100px;
 				opacity: 0;
 			}
@@ -294,7 +256,7 @@
 			}
 		}
 		@-o-keyframes animateTop {
-					from {
+			from {
 				top: 100px;
 				opacity: 0;
 			}
@@ -304,7 +266,7 @@
 			}
 		}
 		@-moz-keyframes animateTop {
-					from {
+			from {
 				top: 100px;
 				opacity: 0;
 			}
@@ -321,6 +283,7 @@
 			animation: link .5s;
 			font-weight: bold;
 			width: 100%;
+			font-size: 1.1rem;
 		}
 
 		.mobile a:hover {
@@ -346,6 +309,23 @@
 			padding-left: 1rem;
 			padding-bottom: 0.7rem;
 			animation: link .7s;
+		}
+
+		.link-out {
+			display: none;
+			animation: link-out .7s;
+		}
+
+		@keyframes link-out {
+			from {
+				left: 0;
+				transition: 1s;
+			}
+
+			to {
+				left: -1500px;
+				transition: 1.1s;
+			}
 		}
 
 		@keyframes link {
@@ -396,8 +376,6 @@
 
 		.hambuger {
 			display: block;
-			margin: 3.2rem 1.5rem 0 0 ;
-			/*float: right;*/
 		}
 
 		h2 {

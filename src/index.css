@@ -1,0 +1,30 @@
+/* width */
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(29, 139, 82, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: rgba(6, 27, 45, 1);
+  color: white;
+  scroll-behavior: smooth;
+  transition: 1s;
+  margin: auto;
+}

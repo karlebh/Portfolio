@@ -1,5 +1,5 @@
 <template>
-	<div class="container" @click="myFunction()">
+	<div class="container" @click="toggleHambuger">
 		<div class="bar1"></div>
 		<div class="bar2"></div>
 		<div class="bar3"></div>
@@ -7,13 +7,12 @@
 </template>
 
 <script>
-    export default
-    {
-        methods: {
-            myFunction() {
-              document.querySelector('.container').classList.toggle("change");
-            }
-        }
+    export default {
+      methods: {
+          toggleHambuger() {
+            document.querySelector('.container').classList.toggle("change");
+          }
+      }
     }
 </script>
 

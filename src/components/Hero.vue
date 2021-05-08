@@ -52,6 +52,12 @@
 </script>
 
 <style scoped>
+	
+	.links {
+		display: inline-block;
+		text-align: center;
+		margin-left: 3rem;
+	}
 
 	.links a {
 		margin-right: 2rem;
@@ -195,12 +201,12 @@
 			align-items: center;
 		}
 
-		.heroText {
-			margin-left: 3rem;
+		.links {
+			margin-bottom: 5rem;
 		}
 
-		.links {
-			margin-bottom: 4rem;
+		.heroText {
+			margin-left: 3rem;
 		}
 
 		button {

@@ -39,6 +39,8 @@
 <style scoped>
 footer {
 	display: flex;
+	min-width: 100%;
+	flex: 1;
 	text-align: left;
 	background: rgba(29, 139, 82, .7);
 	padding: 2rem 5rem 5rem;

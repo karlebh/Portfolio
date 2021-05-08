@@ -21,7 +21,7 @@
 
 <style scoped>
 	.container {
-		margin: 1rem;
+		margin: 2rem 3rem;
 		transition: .5s ease-in-out;
 	}
 

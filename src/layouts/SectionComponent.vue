@@ -12,7 +12,7 @@
 					<img src="@/assets/forum.png" alt="Forum Website" />
 				</template>
 				<template v-slot:desciption>
-					<a style="text-align: center; padding: 0 20px;" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
+					<a style="text-align: center;" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
 						<h3>A social media platform</h3>
 					</a>
 				</template>
@@ -23,7 +23,7 @@
 					<img src="@/assets/e-commerce.png" alt="E-commerce Website" />
 				</template>
 				<template v-slot:desciption>
-					<a style="text-align: center; border: 20px;" href="http://www.lara-e-commerce.herokuapp.com" title="click link to go to project page">
+					<a style="text-align: center;" href="http://www.lara-e-commerce.herokuapp.com" title="click link to go to project page">
 						<h3>An e-commerce Platform</h3>
 					</a>
 				</template>
@@ -93,12 +93,11 @@
 </script>
 
 <style scoped>
+
 img {
-	width: 25rem;
+	width: 20rem;
 	height: 20rem;
-	margin: 2rem 2rem;
 	border-radius: 15px 25px;
-	/*object-fit: contain;*/
 }
 
 a {
@@ -108,9 +107,7 @@ a {
 }
 
 .card {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	display: inline-block;	
+	text-align: center;
 }
 </style>

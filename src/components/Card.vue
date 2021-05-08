@@ -1,34 +1,33 @@
 <template>
 	<div class="container" id="projects">
-		<slot></slot>
+		<a :href="theLink">
+			<slot></slot>
+			<slot class="slot-value" name="desciption"></slot>
+		</a>
 	</div>
 </template>
 
+<script>
+	export default {
+		props: ['link'],
+
+		data() {
+			return {
+				theLink: this.link,
+			}
+		}
+	}
+</script>
+
 <style scoped>
 	.container {
-		background-image: url('~@/assets/crowd.png');
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		background-color: rgba(29, 139, 82, .7);
-		color: white;
-		margin: 2rem 2rem;
-		padding: 3rem;
-		width: 25rem;
-		height: 20rem;
-		text-align: center;
-		border-radius: 2rem 4rem;
-		transition: 1s;
-		cursor: pointer;
-		outline: none;
-		border: 1px;
+		margin: 1rem;
+		transition: .5s ease-in-out;
 	}
 
 	.container:hover {
-		transform: scale(1.1);
-		background-color: rgba(29, 139, 82, 1);
-	}
+		transform: scale(1.03);
+}
 
 	a {
 		text-decoration: none;

@@ -23,8 +23,6 @@
 </template>
 
 <script>
-	import emailjs from 'emailjs-com';
-
 	export default {
 		name: 'ContactUs',
 		data() {
@@ -35,20 +33,8 @@
 			}
 		},
 		methods: {
-			sendEmail(e) {
-				try {
-					emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID', {
-						name: this.name,
-						email: this.email,
-						message: this.meessage
-					})
-					console.log('it works!!!')
-				} catch (error) {
-					console.log({error})
-				}
-				this.name = ''
-				this.email = ''
-				this.message = ''
+			sendEmail() {
+				// window.open(`mailto:${this.email}?body${this.message}`)
 			},
 		}
 	}

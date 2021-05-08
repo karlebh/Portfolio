@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<main>
 		<Hero />
 		<h1 style="text-align: center;">About</h1>
 		<About />
@@ -7,46 +7,71 @@
 		<h1 style="text-align: center;">Projects</h1>
 
 		<div class="card">
-			<card>
-				<a class="" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
-					<h3>A social platform built with PHP/Laravel and Javascript/Vuejs</h3>
-				</a>
+			<card link="http://www.lara-blog-example.herokuapp.com">
+				<template v-slot:default>
+					<img src="@/assets/forum.png" alt="Forum Website" />
+				</template>
+				<template v-slot:desciption>
+					<a style="text-align: center; padding: 0 20px;" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
+						<h3>A social media platform</h3>
+					</a>
+				</template>
 			</card>
 
-			<card>
-				<a class="" href="http://www.lara-e-commerce-example.herokuapp.com" title="click link to go to project page">
-					<h3>An E-commerce platform built with PHP/Laravel and Javascript/Vuejs</h3>
-				</a>
+			<card link="http://www.lara-e-commerce.herokuapp.com">
+				<template v-slot:default>
+					<img src="@/assets/e-commerce.png" alt="E-commerce Website" />
+				</template>
+				<template v-slot:desciption>
+					<a style="text-align: center; border: 20px;" href="http://www.lara-e-commerce.herokuapp.com" title="click link to go to project page">
+						<h3>An e-commerce Platform</h3>
+					</a>
+				</template>
 			</card>
 
-			<card>
-				<a class="" href="" title="click link to go to project page">
-					<h3>Loop Studios Front End Design</h3>
-				</a>
+			<card link="https://www.crowd-funding-rho.vercel.app">
+				<template v-slot:default>
+					<img src="@/assets/crowd.png" alt="" />
+				</template>
+				<template v-slot:desciption>
+					<a style="text-align: center;" href="https://www.crowd-funding-rho.vercel.app" title="click link to go to project page">
+						<h3>Crowd Funding,  A Front-end only.</h3>
+					</a>
+				</template>
 			</card>
 
-			<card>
-				<a class="" href="" title="click link to go to project page">
-					<h3>Room Front End Design</h3>
-				</a>
+			<card link="https://www.loop-studio-slime.vercel.app">
+				<template v-slot:default>
+					<img src="@/assets/loop-studio.png" alt="Loop studio" />
+				</template>
+				<template v-slot:desciption>
+					<a style="text-align: center;" href="https://www.loop-studio-slime.vercel.app" title="click link to go to project page">
+						<h3>Loop Studios landing page</h3>
+					</a>
+				</template>
 			</card>
 
-
-			<card>
-				<a class="" href="" title="click link to go to project page">
-					<h3>Crowd funding Front End Design</h3>
-				</a>
+			<card link="https://www.room-karlebh.vercel.app">
+				<template v-slot:default>
+					<img src="@/assets/room.png" alt="" />
+				</template>
+				<template v-slot:desciption>
+					<a style="text-align: center;" href="https://www.room-karlebh.vercel.app" title="click link to go to project page">
+						<h3>Room marketing page</h3>
+					</a>
+				</template>
 			</card>
+
 		</div>
 
 
-		
+		<br><br><br>
 		<h1 style="text-align: center;">Contact</h1>
 
 		<Contact />
 
 
-	</section>
+	</main>
 </template>
 
 <script>
@@ -68,6 +93,14 @@
 </script>
 
 <style scoped>
+img {
+	width: 25rem;
+	height: 20rem;
+	margin: 2rem 2rem;
+	border-radius: 15px 25px;
+	/*object-fit: contain;*/
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -77,7 +110,7 @@ a {
 .card {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 }
 </style>

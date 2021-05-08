@@ -3,7 +3,11 @@
 		<article class="about">
 			I am passionate about developing web solutions. I have years of experience developing with PHP and Javascrit experience.
 
-			I use Laravel framework to develop various website applications. For the front end, I major in VueJs a Javascript framework that allows to write Javascript in a declarative manner
+			I use Laravel framework to develop various website applications. For the front end, I major in VueJs a Javascript framework that allows to write Javascript in a declarative manner.
+
+			<br><br><br>
+			My Stacks include: PHP, Laravel, Javascript, Vuejs, TailwindCss and Bootstrap.
+
 		</article>	
 	</div>
 </template>

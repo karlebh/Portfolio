@@ -7,56 +7,56 @@
 		<h1 style="text-align: center;">Projects</h1>
 
 		<div class="card">
-			<card link="http://www.lara-blog-example.herokuapp.com">
+			<card link="http://lara-blog-example.herokuapp.com">
 				<template v-slot:default>
 					<img src="@/assets/forum.png" alt="Forum Website" />
 				</template>
 				<template v-slot:desciption>
-					<a style="text-align: center;" href="http://www.lara-blog-example.herokuapp.com" title="click link to go to project page">
+					<a style="text-align: center;" href="http://lara-blog-example.herokuapp.com" title="click link to go to project page">
 						<h3>A social media platform</h3>
 					</a>
 				</template>
 			</card>
 
-			<card link="http://www.lara-e-commerce.herokuapp.com">
+			<card link="http://lara-e-commerce.herokuapp.com">
 				<template v-slot:default>
 					<img src="@/assets/e-commerce.png" alt="E-commerce Website" />
 				</template>
 				<template v-slot:desciption>
-					<a style="text-align: center;" href="http://www.lara-e-commerce.herokuapp.com" title="click link to go to project page">
+					<a style="text-align: center;" href="http://lara-e-commerce.herokuapp.com" title="click link to go to project page">
 						<h3>An e-commerce Platform</h3>
 					</a>
 				</template>
 			</card>
 
-			<card link="https://www.crowd-funding-rho.vercel.app">
+			<card link="https://crowd-funding-rho.vercel.app">
 				<template v-slot:default>
 					<img src="@/assets/crowd.png" alt="" />
 				</template>
 				<template v-slot:desciption>
-					<a style="text-align: center;" href="https://www.crowd-funding-rho.vercel.app" title="click link to go to project page">
+					<a style="text-align: center;" href="https://crowd-funding-rho.vercel.app" title="click link to go to project page">
 						<h3>Crowd Funding,  A Front-end only.</h3>
 					</a>
 				</template>
 			</card>
 
-			<card link="https://www.loop-studio-slime.vercel.app">
+			<card link="https://loop-studio-slime.vercel.app">
 				<template v-slot:default>
 					<img src="@/assets/loop-studio.png" alt="Loop studio" />
 				</template>
 				<template v-slot:desciption>
-					<a style="text-align: center;" href="https://www.loop-studio-slime.vercel.app" title="click link to go to project page">
+					<a style="text-align: center;" href="https://loop-studio-slime.vercel.app" title="click link to go to project page">
 						<h3>Loop Studios landing page</h3>
 					</a>
 				</template>
 			</card>
 
-			<card link="https://www.room-karlebh.vercel.app">
+			<card link="https://room-karlebh.vercel.app">
 				<template v-slot:default>
 					<img src="@/assets/room.png" alt="" />
 				</template>
 				<template v-slot:desciption>
-					<a style="text-align: center;" href="https://www.room-karlebh.vercel.app" title="click link to go to project page">
+					<a style="text-align: center;" href="https://room-karlebh.vercel.app" title="click link to go to project page">
 						<h3>Room marketing page</h3>
 					</a>
 				</template>

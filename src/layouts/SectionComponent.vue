@@ -95,9 +95,16 @@
 <style scoped>
 
 img {
-	width: 20rem;
-	height: 20rem;
+	width: 200px;
+	height: 200px;
 	border-radius: 15px 25px;
+}
+
+@media and screen (min-width: 1024px) {
+	img {
+		width: 320px;
+		height: 320px;
+	}
 }
 
 a {

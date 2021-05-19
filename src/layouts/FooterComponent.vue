@@ -6,27 +6,18 @@
 			<p>&copy; <span id="date"></span> copyright all rights reserved<span ></span></p>
 
 			<div class="links">
-				<twitterSVG />
-				<githubSVG />
-				<facebookSVG />
-				<linkedInSVG />
+				<links />
 			</div>
 		</div>
 	</footer>
 </template>
 
 <script>
-	import facebookSVG from '../components/facebookSVG'
-	import githubSVG from '../components/githubSVG'
-	import twitterSVG from '../components/twitterSVG'
-	import linkedInSVG from '../components/linkedInSVG'
+	import Links from '@/components/Links'
 	
 	export default {
 		components: {
-			twitterSVG,
-			githubSVG,
-			facebookSVG,
-			linkedInSVG,
+			Links,
 		}, 
 
 		mounted() {
@@ -42,12 +33,14 @@ footer {
 	min-width: 100%;
 	flex: 1;
 	text-align: left;
-	background: rgba(29, 139, 82, .7);
+	color: rgba(29, 139, 82, .7);
+	background-color: #dcdcdc;
 	padding: 2rem 5rem 5rem;
 }
 
 p {
 	margin-top: 1rem;
+	font-size: 1.3rem;
 }
 
 .links {
@@ -61,13 +54,4 @@ p {
 		margin: 0 30%;
 	}
 }
-
-/* mobile */
-/*@media screen and (max-width: 960px) {
-	.links {
-		margin-bottom: 4rem;
-	}
-}*/
-
-
 </style>

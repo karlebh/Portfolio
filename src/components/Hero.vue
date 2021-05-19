@@ -13,17 +13,14 @@
 			</div>
 
 			<div id="util">
-				<a href="#contact">
+				<a href="mailto:akejucaleb@gmail.com">
 					<button>
 						CONTACT
 					</button>
 				</a>
 
 				<div class="links">
-					<twitterSVG />
-					<githubSVG />
-					<facebookSVG />
-					<linkedInSVG />
+					<links />
 				</div>
 
 			</div>
@@ -35,19 +32,12 @@
 </template>
 
 <script>
-	import facebookSVG from './facebookSVG'
-	import githubSVG from './githubSVG'
-	import twitterSVG from './twitterSVG'
-	import linkedInSVG from './linkedInSVG'
+	import Links from './Links'
 	
 	export default {
-		
 		components: {
-			facebookSVG,
-			githubSVG,
-			twitterSVG,
-			linkedInSVG,
-		}
+			Links,
+		},
 	}
 </script>
 
@@ -97,9 +87,6 @@
 		background-color: rgba(29, 139, 82, .7);
 	}
 
-	h2 {
-	}
-
 	h1 {
 		/*font-family: 'Verdana';*/
 		position: relative;
@@ -107,47 +94,12 @@
 		color: rgba(29, 139, 82, .7); 
 		animation: second_header 1.5s;
 	}
-	
-	@keyframes second_header {
-		from {bottom: -200px;}
-		to {bottom: 0}
-	}
-
-	@-webkit-keyframes second_header {
-		from {bottom: -200px;}
-		to {bottom: 0}
-	}
-	@-o-keyframes second_header {
-		from {bottom: -200px;}
-		to {bottom: 0}
-	}
-	@-moz-keyframes second_header {
-		from {bottom: -200px;}
-		to {bottom: 0}
-	}
 
 	h2 {
 		position: relative;
 		animation: first_header 2s;
 	}
 
-	@keyframes first_header {
-		from {left: -100px; }
-		to { left: 0; }
-	}
-
-	@-webkit-keyframes first_header {
-		from {left: -100px; }
-		to { left: 0; }
-	}
-	@-o-keyframes first_header {
-		from {left: -100px; }
-		to { left: 0; }
-	}
-	@-moz-keyframes first_header {
-		from {left: -100px; }
-		to { left: 0; }
-	}
 
 	.image {
 		position: relative;
@@ -157,33 +109,14 @@
 		transition: .5s ease-in;
 		animation: image 1.5s;
 		border-radius: .5rem 3rem;
-		position: relative;
 		left: 4rem;
-		animation: image 1s;
+		animation: image 1.4s;
 	}
 
 	.image:hover {
 		transform: scale(1.05);
 	}
 
-	@keyframes image {
-		from {right: -100px;}
-		to {right: 0}
-	}
-
-	@-webkit-keyframes image {
-		from {right: -100px;}
-		to {right: 0}
-	}
-	@-o-keyframes image {
-		from {right: -100px;}
-		to {right: 0}
-	}
-	@-moz-keyframes image {
-		from {right: -100px;}
-		to {right: 0}
-	}
-	
 	#util {
 		display: flex;
 		flex-direction: column;
@@ -213,12 +146,10 @@
 			padding: 1rem 2rem;
 		}
 
-
 		.image {
 			display: flex;
 			position: relative;
 			left: 3.8rem;
-
 		}
 
 		.child-1 {

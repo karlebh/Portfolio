@@ -6,7 +6,7 @@
 			I use Laravel framework to develop various website applications. For the front end, I major in VueJs a Javascript framework that allows to write Javascript in a declarative manner.
 
 			<br><br><br>
-			My Stacks include: PHP, Laravel, Javascript, Vuejs, TailwindCss and Bootstrap.
+			My Stacks include: PHP, Laravel, Javascript, and VueJs.
 
 		</article>	
 	</div>

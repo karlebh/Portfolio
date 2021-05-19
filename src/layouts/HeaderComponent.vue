@@ -7,16 +7,16 @@
 
 			<div class="desktop">
 				<a href="#about" title="about link">About</a>
-				<a href="#cv" title="cv link">CV</a>
-				<a href="#contact" title="contact link">Contact</a>
+				<a href="@/assets/Akeju_Caleb_Resume.pdf" target="blanck" title="cv link" download>CV</a>
+				<a href="mailto:akejucaleb@gmail.com" title="contact link">Contact</a>
 				<a href="#projects" title="projects link">Projects</a>
 			</div>
 		</div>
 
 		<div v-show="isOpen" class="mobile">
 			<a href="#about" title="about link">About</a>
-			<a href="#cv" title="cv link">CV</a>
-			<a href="#contact" title="contact link">Contact</a>
+			<a href="../assets/Akeju_Caleb_Resume.pdf" target="blanck" title="cv link" download>CV</a>
+			<a href="mailto:akejucaleb@gmail.com" title="contact link">Contact</a>
 			<a href="#projects" title="projects link">Projects</a>
 		</div>
 
@@ -59,45 +59,7 @@
 		letter-spacing: .1rem;
 	}
 
-	@keyframes h {
-		from {
-			left: -500px;
-		}
-
-		to {
-			left: 0;
-		}
-	}
-
-	@-webkit-keyframes h {
-			from {
-			left: -500px;
-		}
-
-		to {
-			left: 0;
-		}
-	}
-	@-o-keyframes h {
-			from {
-			left: -500px;
-		}
-
-		to {
-			left: 0;
-		}
-
-	}
-	@-moz-keyframes h {
-			from {
-			left: -500px;
-		}
-
-		to {
-			left: 0;
-		}
-	}
-
+	
 	.head {
 		display: flex;
 		display: -webkit-flex;
@@ -110,9 +72,7 @@
 	header {
 		display: flex;
 		flex-direction: column;
-		/*justify-content: space-between;*/
 		padding: 1rem;
-		/*background-color: gray;*/
 		width: 100%;
 		transition: 5s;
 		overflow: hidden;
@@ -137,44 +97,6 @@
 			position: relative;
 			overflow: hidden;
 			animation: desktop 1.1s;
-		}
-
-		@keyframes desktop {
-			from {
-				right: -500px;
-			}
-
-			to {
-				right: 0;
-			}
-		}
-
-		@-webkit-keyframes desktop {
-			from {
-				right: -500px;
-			}
-
-			to {
-				right: 0;
-			}
-		}
-		@-o-keyframes desktop {
-			from {
-				right: -500px;
-			}
-
-			to {
-				right: 0;
-			}
-		}
-		@-moz-keyframes desktop {
-			from {
-				right: -500px;
-			}
-
-			to {
-				right: 0;
-			}
 		}
 
 		.desktop a {
@@ -234,48 +156,7 @@
 			animation: animateTop .5s;
 		}
 
-		@keyframes animateTop {
-			from {
-				top: 100px;
-				opacity: 0;
-			}
-			to {
-				top: 0;
-				opacity: 1;
-			}
-		}
-
-		@-webkit-keyframes animateTop {
-			from {
-				top: 100px;
-				opacity: 0;
-			}
-			to {
-				top: 0;
-				opacity: 1;
-			}
-		}
-		@-o-keyframes animateTop {
-			from {
-				top: 100px;
-				opacity: 0;
-			}
-			to {
-				top: 0;
-				opacity: 1;
-			}
-		}
-		@-moz-keyframes animateTop {
-			from {
-				top: 100px;
-				opacity: 0;
-			}
-			to {
-				top: 0;
-				opacity: 1;
-			}
-		}
-
+		
 		.mobile a {
 			padding: 0.3rem 1rem;
 			color: rgba(29, 139, 82, 1);
@@ -314,64 +195,6 @@
 		.link-out {
 			display: none;
 			animation: link-out .7s;
-		}
-
-		@keyframes link-out {
-			from {
-				left: 0;
-				transition: 1s;
-			}
-
-			to {
-				left: -1500px;
-				transition: 1.1s;
-			}
-		}
-
-		@keyframes link {
-			from {
-				left: 1500px;
-				transition: 1s;
-			}
-
-			to {
-				left: 0;
-				transition: 1.1s;
-			}
-		}
-
-		@-webkit-keyframes link {
-			from {
-				left: 1500px;
-				transition: 4s;
-			}
-
-			to {
-				left: 0;
-				transition: 4s;
-			}
-		}
-		@-o-keyframes link {
-			from {
-				left: 1500px;
-				transition: 4s;
-			}
-
-			to {
-				left: 0;
-				transition: 4s;
-			}
-		}
-		@-moz-keyframes link {
-			from {
-				left: 1500px;
-				transition: 4s;
-			}
-
-			to {
-				left: 0;
-				transition: 4s;
-			}
 		}
 
 		.hambuger {

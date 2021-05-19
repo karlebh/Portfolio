@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
-    <SectionComponent></SectionComponent>
+    <MainComponent></MainComponent>
     <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
 import HeaderComponent from './layouts/HeaderComponent'
-import SectionComponent from './layouts/SectionComponent'
+import MainComponent from './layouts/MainComponent'
 import FooterComponent from './layouts/FooterComponent'
 
 
@@ -18,7 +18,7 @@ export default
   components: 
   {
     HeaderComponent,
-    SectionComponent,
+    MainComponent,
     FooterComponent,
   }
 }
